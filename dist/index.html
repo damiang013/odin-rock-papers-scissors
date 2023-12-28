@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, papel o tijera</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-main bg-cover bg-no-repeat bg-center h-screen">
+    <main class="my-10 flex flex-col items-center">
+        <h1 class="text-[36px] text-center leading-none font-coda">
+            PIEDRA, PAPEL 
+            <span class="text-[54px] block">O TIJERAS</span>
+        </h1>
+        <p class="text-center font-open-sans text-lg font-bold mt-5 mb-8">
+            El primero en llegar a 5 puntos gana!
+        </p>
+        <span class="font-open-sans font-bold text-xl text-center block mb-3">Ronda número <span id="round-number">1</span></span>
+
+        <div class="flex gap-7 mx-5 max-w-[1000px]">
+            <button class="bg-white/35 rounded-full p-4 active:scale-90 transition-transform">
+                <img src="img/piedra.png" alt="Piedra" class="w-full h-full">
+            </button>
+            <button class="bg-white/35 rounded-full p-4 active:scale-90 transition-transform">
+                <img src="img/papel.png" alt="Papel" class="w-full h-full">
+            </button>
+            <button class="bg-white/35 rounded-full p-4 active:scale-90 transition-transform">
+                <img src="img/tijera.png" alt="Tijera" class="w-full h-full">
+            </button>
+        </div>
+        
+        <div class="flex justify-around w-full font-coda text-md mt-5">
+            <span class="">Jugador: <span id="player-score">0</span> puntos</span>
+            <span class="">CPU: <span id="cpu-score">0</span> puntos</span>
+        </div>
+
+        <span class="font-open-sans text-center block mt-8" id="round-winner">🍀¡Qué gane el mejor!🍀</span>
+    </main>
+</body>
+</html>
